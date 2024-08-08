@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arkfanen</title>
+    <style>
+        div{
+            color :blue;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            border: solid green 2px;
+            width: 20px;
+            height: 20px;
+            float: left;;
+        }
+        div.førstPåLinja{
+            clear: left;
+        }
+    </style>
+  </head>
+  <body>
+        <div id = "r1k1" onclick="trykk(this, 'r1k2', 'r2k1', 'r2k1', 'r2k1')">7</div>
+        <div id = "r1k2" onclick="trykk(this, 'r1k1', 'r2k2', 'r1k3', 'r1k3')">1</div>
+        <div id = "r1k3" onclick="trykk(this, 'r2k3', 'r1k2', 'r1k2', 'r1k2')">2</div>
+        <div id = "r2k1" class="førstPåLinja" onclick="trykk(this, 'r1k1', 'r2k2', 'r3k1', 'r3k1')">5</div>
+        <div id = "r2k2" onclick="trykk(this, 'r2k1', 'r1k2', 'r2k3', 'r3k2')"></div>
+        <div id = "r2k3" onclick="trykk(this, 'r3k3', 'r2k2', 'r1k3', 'r1k3')">3</div>
+        <div id = "r3k1" class="førstPåLinja" onclick="trykk(this, 'r2k1', 'r3k2', 'r3k2', 'r3k2')">8</div>
+        <div id = "r3k2" onclick="trykk(this, 'r3k1', 'r2k2', 'r3k3', 'r3k3')">4</div>
+        <div id = "r3k3" onclick="trykk(this, 'r3k2', 'r2k3', 'r2k3', 'r2k3')">6</div>
+
+        <script>
+
+            function trykk(tagElement, alt1, alt2, alt3, alt4) {
+
+                if (document.getElementById(alt1).innerHTML == '') {
+                    document.getElementById(alt1).innerHTML = tagElement.innerHTML;
+                    tagElement.innerHTML = '';
+                    var rute1 = document.getElementById('r1k1');
+                var rute2 = document.getElementById('r1k2');
+                var rute3 = document.getElementById('r1k3');
+                var rute4 = document.getElementById('r2k1');
+                var rute5 = document.getElementById('r2k2');
+                var rute6 = document.getElementById('r2k3');
+                var rute7 = document.getElementById('r3k1');
+                var rute8 = document.getElementById('r3k2');
+                var rute9 = document.getElementById('r3k3');
+                if(rute1.innerHTML == '1' && rute2.innerHTML == '2' && rute3.innerHTML == '3' && rute4.innerHTML == '4' && rute5.innerHTML == '5' && rute6.innerHTML == '6' && rute7.innerHTML == '7' && rute8.innerHTML == '8' && rute9.innerHTML == ''){
+                    alert("Du har løst spillet!");
+            }
+                }
+                if (document.getElementById(alt2).innerHTML == '') {
+                    document.getElementById(alt2).innerHTML = tagElement.innerHTML;
+                    tagElement.innerHTML = '';
+                    var rute1 = document.getElementById('r1k1');
+                var rute2 = document.getElementById('r1k2');
+                var rute3 = document.getElementById('r1k3');
+                var rute4 = document.getElementById('r2k1');
+                var rute5 = document.getElementById('r2k2');
+                var rute6 = document.getElementById('r2k3');
+                var rute7 = document.getElementById('r3k1');
+                var rute8 = document.getElementById('r3k2');
+                var rute9 = document.getElementById('r3k3');
+                if(rute1.innerHTML == '1' && rute2.innerHTML == '2' && rute3.innerHTML == '3' && rute4.innerHTML == '4' && rute5.innerHTML == '5' && rute6.innerHTML == '6' && rute7.innerHTML == '7' && rute8.innerHTML == '8' && rute9.innerHTML == ''){
+                    alert("Du har løst spillet!");
+            }
+                }
+                if (document.getElementById(alt3).innerHTML == '') {
+                    document.getElementById(alt3).innerHTML = tagElement.innerHTML;
+                    tagElement.innerHTML = '';
+                    var rute1 = document.getElementById('r1k1');
+                var rute2 = document.getElementById('r1k2');
+                var rute3 = document.getElementById('r1k3');
+                var rute4 = document.getElementById('r2k1');
+                var rute5 = document.getElementById('r2k2');
+                var rute6 = document.getElementById('r2k3');
+                var rute7 = document.getElementById('r3k1');
+                var rute8 = document.getElementById('r3k2');
+                var rute9 = document.getElementById('r3k3');
+                if(rute1.innerHTML == '1' && rute2.innerHTML == '2' && rute3.innerHTML == '3' && rute4.innerHTML == '4' && rute5.innerHTML == '5' && rute6.innerHTML == '6' && rute7.innerHTML == '7' && rute8.innerHTML == '8' && rute9.innerHTML == ''){
+                    alert("Du har løst spillet!");
+            }
+                }
+                if (document.getElementById(alt4).innerHTML == '') {
+                    document.getElementById(alt4).innerHTML = tagElement.innerHTML;
+                    tagElement.innerHTML = '';
+                    var rute1 = document.getElementById('r1k1');
+                var rute2 = document.getElementById('r1k2');
+                var rute3 = document.getElementById('r1k3');
+                var rute4 = document.getElementById('r2k1');
+                var rute5 = document.getElementById('r2k2');
+                var rute6 = document.getElementById('r2k3');
+                var rute7 = document.getElementById('r3k1');
+                var rute8 = document.getElementById('r3k2');
+                var rute9 = document.getElementById('r3k3');
+                if(rute1.innerHTML == '1' && rute2.innerHTML == '2' && rute3.innerHTML == '3' && rute4.innerHTML == '4' && rute5.innerHTML == '5' && rute6.innerHTML == '6' && rute7.innerHTML == '7' && rute8.innerHTML == '8' && rute9.innerHTML == ''){
+                    alert("Du har løst spillet!");
+            }
+                }
+
+
+            }
+
+        </script>
+  </body>
+</html>
